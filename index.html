@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+        <input class="pantalla" type="text" disabled>
+        <div class="botones">
+            <button class= "clear" onclick="limpiar('C')">C</button> 
+            <!--Este boton se encarga de limpiar la pantalla -->
+
+            <button class="retroceso" onclick="regresar()">←</button>
+
+            <!--Este boton indica la flecha que mueve el digito 'seleccionado'-->
+
+            <button class="operador" onclick="agregar('/')">/</button> 
+            <!--Este boton se encarga de hacer la operacion de division entre el primer y el segundo numero -->
+
+            <button id='1' class="operador" onclick="agregar('*')">*</button> 
+            <!--Este boton se encarga de hacer la operacion de multplicacion del primer y el segundo numero -->
+
+            <button onclick="agregar('7')">7</button> 
+            <!--Este boton expresa el numero 7-->
+
+            <button onclick="agregar('8')">8</button> 
+            <!--Este boton expresa el numero 8-->
+
+            <button onclick="agregar('9')">9</button> 
+            <!--Este boton expresa el numero 9-->
+
+            <button class="operador" onclick="agregar('-')">-</button> 
+            <!--Este boton se encarga de hacer la operacion de resta del primer y el segundo numero -->
+
+            <button onclick="agregar('4')">4</button> 
+            <!--Este boton expresa el numero 4-->
+
+            <button onclick="agregar('5')">5</button> 
+            <!--Este boton expresa el numero 5-->
+
+            <button onclick="agregar('6')">6</button> 
+            <!--Este boton expresa el numero 6-->
+
+            <button class="operador" onclick="agregar('+')">+</button> 
+            <!--Este boton se encarga de hacer la operacion de suma del primer y el segundo numero -->
+
+            <button onclick="agregar('1')">1</button> 
+            <!--Este boton expresa el numero 1-->
+
+            <button onclick="agregar('2')">2</button> 
+            <!--Este boton expresa el numero 2-->
+
+            <button onclick="agregar('3')">3</button> 
+            <!--Este boton expresa el numero 3-->
+
+            <button class="operador" onclick="agregar('√')">√</button> 
+            <!-- Este boton hace la operacion de raiz cuadrada-->
+
+            <button class="igual" onclick="calcular()"> =</button>
+            <!--Muestra el resultado de la operacion realiza-->
+
+            <button onclick="agregar('0')">0</button> 
+            <!--Este boton expresa el numero 0-->
+
+            <button onclick="agregar('.')">.</button>
+            <!--Este boton se encarga colocar el punto decimal en los numeros -->
+            
+         
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
